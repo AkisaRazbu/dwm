@@ -5,7 +5,7 @@
    / /\ \  |  <    | |   \___ \  / /\ \   | |  | | \ \/  \/ /  | |\/| | | |    | |  | || . ` ||  __|    | | | | |_ |
   / ____ \ | . \  _| |_  ____) |/ ____ \  | |__| |  \  /\  /   | |  | | | |____| |__| || |\  || |      _| |_| |__| |
  /_/    \_\|_|\_\|_____||_____//_/    \_\ |_____/    \/  \/    |_|  |_|  \_____|\____/ |_| \_||_|     |_____|\_____|
-                                                                                                                    
+
 */
 
 /* appearance */
@@ -23,25 +23,16 @@ static const char dmenufont[]       = "JetBrainsMono Nerd Font Mono:size=10";
 
 /* themes */
 #include "/home/akisa/.config/dwm/themes/tokyo-night.h"
-// #include "home/akisa/.config/dwm/themes/onedark.h
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_gray1,  col_gray5  },
 };
 
-/* Classic Tagging */
-
-/* static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }; */
-
 /* Roman Tagging */
 static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X" };
 
 static const Rule rules[] = {
-	/* xprop(1):
-	 *	WM_CLASS(STRING) = instance, class
-	 *	WM_NAME(STRING) = title
-	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
@@ -135,7 +126,6 @@ static Key keys[] = {
 };
 
 /* button definitions */
-/* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
@@ -150,4 +140,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
