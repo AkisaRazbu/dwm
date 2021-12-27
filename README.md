@@ -1,6 +1,6 @@
 # Akisa's DWM config
 
-####My setup for DWM, it includes Tokyo Night color scheme by default but you can change that by adding a color scheme to the *themes* folder.
+###My setup for DWM, it includes Tokyo Night color scheme by default but you can change that by adding a color scheme to the *themes* folder.
 
 **To make this set up work properly you will need libxft-bgra. Download it from AUR.**
 **If there are any conflicts with normal libxft just agree to replace it.**
