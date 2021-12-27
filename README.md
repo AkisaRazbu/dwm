@@ -24,5 +24,10 @@ $ cd dwm && sudo make clean install
 
 **After doing these steps, put code below into your .xinitrc**
 ```bash
-exec dwm
+while true; do
+    # Log stderror to a file 
+    dwm 2> ~/.dwm.log
+    # No error logging
+    #dwm >/dev/null 2>&1
+done
 ```
