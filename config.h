@@ -8,6 +8,8 @@
 ======================================================================================================================|
 */
 
+/* Magit Test */
+
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
